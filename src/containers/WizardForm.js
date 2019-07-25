@@ -54,23 +54,32 @@ class WizardForm extends Component {
         }
     }
 
+    // get rates from 3rd party and save them as state
     componentWillMount() {
         this.props.getRates();
     }
 
+    // set the username and save in localstorage and navigate to currency step
     setUserName = (values) => {
         this.props.setName(values);
         this.setState({ page: SET_CURRENCY_PAGE })
     }
 
+    // show the conversion result of selected currency
     showResult(values) {
-        this.setState({ selectedOption: values.currency, page: SHOW_RESULT_PAGE })
+        this.setState({
+            selectedOption: values.currency,
+            page: SHOW_RESULT_PAGE
+        })
     }
 
+    // navigate to the set currency step ( for click second step )
     gotoSetCurrency() {
         this.setState({ page: SET_CURRENCY_PAGE })
     }
 
+    // remove the username located in localstorage to create new user
+    // then navigate to the set name step
     gotoSetUserName() {
         this.props.removeName();
         this.setState({ page: SET_NAME_PAGE })

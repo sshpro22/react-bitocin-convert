@@ -20,11 +20,12 @@ const CurrencyStep = ({ user, handleSubmit, rates, selectedCurrency }) => {
   let loadFlag = rates.loading;
   let error = rates.error;
   
-  // get the list of rates from the state ( received from the server )
+  // Get the list of rates from the state ( received from the server )
   const rateList = Object.entries(rates.data).map(([key, rate]) => ({
     value: key,
     label: `${key} (${rate.name})`
   }));
+  // For the first(default) item
   const selectOptions = [{
     value: '',
     label: 'Please select...'
@@ -51,8 +52,7 @@ const CurrencyStep = ({ user, handleSubmit, rates, selectedCurrency }) => {
   )
 }
 
-// pick the first rate of the list, so that prevents the error of non-selected
-
+// Get the selected currency for the conversion to BTC
 const getSelectedCurrency = state => {
   const selectedCurrency = formValueSelector('wizard')(state, 'currency');
   return { selectedCurrency }
