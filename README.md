@@ -7,7 +7,7 @@ Divided into 3 steps.
 
 1. UserName Step. 
 ```bash
-  First, once the user inputs the username and then 
+  First, once the user inputs the username and then,
   this persists the user name without using a database(localstorage used).
   
   So after close and reopen the WebPage, it takes the user directly to the second screen
