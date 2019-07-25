@@ -20,13 +20,13 @@ Divided into 3 steps.
   Takes the user into the second screen.
 ```
 2. Select Currency
-```bash
+
   Lists all currencies from 3rd party API [https://apiv2.bitcoinaverage.com/](#https://apiv2.bitcoinaverage.com/).
   It is available to search and scroll.
 
   User selects the currency he wants to convert and confirms.
   Then it navigates to the second screen.
-```
+
 3. Present Conversion Result
 ```bash
   It shows how much 1 BTC is converted into the chosen currency.
