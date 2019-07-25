@@ -11,6 +11,17 @@ const ResultStep = ({ selectedOption, onBack, rates }) => {
     const bitcoinRate = rates['BTC'].rate;
     const targetCurrencyRate = selectedRate.rate;
     const targetValue = targetCurrencyRate / bitcoinRate;
+    
+    // detect the minimize, reopen event and 
+    // take person to the second(currency) screen
+
+    document.addEventListener("visibilitychange", handleVisibilityChange, false);
+    const handleVisibilityChange = () => {
+        if (document.hidden === false) {
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
+            onBack()
+        }
+    }
 
     return (
         <div>
