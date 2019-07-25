@@ -4,6 +4,8 @@ In this app, user inputs the name and select the currency.
 Then it converts the chosen currency into the BITCOIN.
 User can see the conversion result and navigation to the other screen is available.
 
+![](https://user-images.githubusercontent.com/52404115/61911315-28758b00-af05-11e9-939c-6c317b21618f.gif)
+
 ## Structure && Description
 
 Used the react wizard form.
