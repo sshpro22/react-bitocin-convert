@@ -17,7 +17,7 @@ const ResultStep = ({ selectedOption, onBack, rates }) => {
             <p>
                 1 BTC = <b>{targetValue.toFixed(2)}</b> {selectedOption}
             </p>
-            <Button onClick={onBack}>Choose Coin</Button>
+            <Button onClick={onBack}>Choose Currency</Button>
         </div>
     )
 }
