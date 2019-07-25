@@ -21,7 +21,7 @@ Divided into 3 steps.
 
 ### 2. Select Currency
 
-  Lists all currencies from 3rd party API [https://apiv2.bitcoinaverage.com](https://apiv2.bitcoinaverage.com).
+  Lists all currencies from 3rd party API [https://apiv2.bitcoinaverage.com](https://apiv2.bitcoinaverage.com/constants/exchangerates/global).
   It is available to search and scroll.
 
   User selects the currency he wants to convert and confirms.
